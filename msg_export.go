@@ -244,7 +244,7 @@ func (m *Message) WriteTo(w io.Writer) (int64, error) {
 		err error
 	)
 
-	var buf [30]byte
+	var buf [15]byte
 	_, err = rand.Read(buf[:])
 	if err != nil {
 		return 0, err
